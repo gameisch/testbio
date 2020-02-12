@@ -1,0 +1,33 @@
+doctype html
+html(class="no-js", lang="en")
+
+    include ../components/head/head
+    include ../components/header/header
+    include ../components/hero/hero
+    include ../components/blockheading/blockheading
+    include ../components/blockpers/blockpers
+    include ../components/blockexp/blockexp
+    include ../components/blockjs/blockjs
+    include ../components/blockabout/blockabout
+    
+
+    head
+        +head(head.defaults)
+    body
+        |%=symbols=%
+        .-content-
+            +header
+            +hero('bg.jpg')
+            h1.h1 Анкета
+            form.-form-(method='#' action='#')
+                +blockpers
+                +blockexp
+                +blockjs
+                +blockabout
+            
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        script(src='%=static=%js/separate-js/jquery-3.2.1.min.js')
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

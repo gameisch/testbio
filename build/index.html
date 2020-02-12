@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default title</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="HandheldFriendly" content="true">
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/main.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+        <meta property="og:title" content="#{data.title}">
+        <meta property="og:title" content="">
+        <meta property="og:url" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="500">
+        <meta property="og:image:height" content="300">
+        <meta property="twitter:description" content="">
+        <link rel="image_src" href="">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+    </head>
+
+    <body>
+        <div class="-content-">
+            <header class="header">
+                <div class="header__inner">
+                    <div class="header__content">
+                        <div class="header__content-close fa fa-times"></div>
+                        <div class="header__menu"><a href="#personal">Личная информация</a><a href="#exp">Опыт</a><a href="#js">JavaScript</a><a href="#about">О себе</a>
+                        </div>
+                    </div>
+                    <div class="header__trigger fa fa-bars"></div>
+                </div>
+            </header>
+            <div class="hero hero--minus">
+                <div class="hero__bg" style="background-image:url(static/img/content/bg.jpg)"></div>
+                <div class="hero__inner"></div>
+            </div>
+            <h1 class="h1">Анкета</h1>
+            <form class="-form-" method="#" action="#">
+                <div class="section" id="personal">
+                    <div class="heading">
+                        <div class="heading__icon" style="background-image:url(static/img/content/icon.png)"></div>
+                        <div class="heading__title">
+                            <h2 class="h2">Личная информация</h2>
+                        </div>
+                    </div>
+                    <div class="section__inner">
+                        <div class="form">
+                            <div class="form__field">
+                                <label for="username">ФИО</label>
+                                <input class="-inputtext-" id="username" name="username" type="text" required>
+                            </div>
+                            <div class="form__field">
+                                <select class="-select-">
+                                    <option>Год рождения</option>
+                                    <option>1988</option>
+                                    <option>1989</option>
+                                    <option>1991</option>
+                                    <option>1991</option>
+                                    <option>1992</option>
+                                    <option>1993</option>
+                                    <option>1994</option>
+                                    <option>1995</option>
+                                    <option>1996</option>
+                                    <option>1997</option>
+                                </select>
+                            </div>
+                            <div class="form__field">
+                                <label for="city">Место проживания</label>
+                                <input class="-inputtext-" id="city" name="city" type="text">
+                            </div>
+                            <div class="form__field">
+                                <label for="skype">Skype</label>
+                                <input class="-inputtext-" id="skype" name="skype" type="text">
+                            </div>
+                            <div class="form__field">
+                                <label for="email">E-mail</label>
+                                <input class="-inputtext-" id="email" name="city" type="email" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="exp">
+                    <div class="heading">
+                        <div class="heading__icon" style="background-image:url(static/img/content/icon2.png)"></div>
+                        <div class="heading__title">
+                            <h2 class="h2">Расскажите о своем опыте</h2>
+                        </div>
+                    </div>
+                    <div class="section__inner">
+                        <div class="form">
+                            <div class="form__field form__field--3col checkbx">
+                                <div class="form__item">
+                                    <input value="bem" id="bem" type="checkbox">
+                                    <label for="bem">БЭМ/OOCSS</label>
+                                </div>
+                                <div class="form__item">
+                                    <input value="les" id="les" type="checkbox">
+                                    <label for="les">Stylus/Less/SASS</label>
+                                </div>
+                                <div class="form__item">
+                                    <input value="svg" id="svg" type="checkbox">
+                                    <label for="svg">Работаю с SVG</label>
+                                </div>
+                                <div class="form__item">
+                                    <input value="sem" id="sem" type="checkbox">
+                                    <label for="sem">Верстаю семантично</label>
+                                </div>
+                                <div class="form__item">
+                                    <input value="es" id="es" type="checkbox">
+                                    <label for="es">ES2015/ES2016</label>
+                                </div>
+                                <div class="form__item">
+                                    <input value="gulp" id="gulp" type="checkbox">
+                                    <label for="gulp">GULP/GRUNT</label>
+                                </div>
+                                <div class="form__item">
+                                    <input value="webp" id="webp" type="checkbox">
+                                    <label for="webp">Webpack</label>
+                                </div>
+                                <div class="form__item">
+                                    <input value="jq" id="jq" type="checkbox">
+                                    <label for="jq">jQuery</label>
+                                </div>
+                                <div class="form__item">
+                                    <input value="git" id="git" type="checkbox">
+                                    <label for="git">Использую Git</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="js">
+                    <div class="heading">
+                        <div class="heading__icon" style="background-image:url(static/img/content/icon3.png)"></div>
+                        <div class="heading__title">
+                            <h2 class="h2">Уровень владения JavaScript</h2>
+                        </div>
+                    </div>
+                    <div class="section__inner">
+                        <div class="form">
+                            <div class="form__range">
+                                <div class="range-slider">
+                                    <input class="js-range-slider" type="text" value="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="about">
+                    <div class="heading">
+                        <div class="heading__icon" style="background-image:url(static/img/content/icon4.png)"></div>
+                        <div class="heading__title">
+                            <h2 class="h2">Расскажите о себе</h2>
+                        </div>
+                        <div class="heading__text">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас</div>
+                    </div>
+                    <div class="section__inner">
+                        <div class="form">
+                            <div class="form__field">
+                                <textarea placeholder="Понравилас тем, что..."></textarea>
+                            </div>
+                            <div class="form__field">
+                                <input class="btn" id="submit" type="submit" value="Готово">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <script src="static/js/separate-js/jquery-3.2.1.min.js"></script>
+        <script src="static/js/main.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,30 @@
+mixin blockpers()
+    .section#personal
+        +heading('Личная информация', 'icon.png')
+        .section__inner
+            .form
+                .form__field
+                    label(for='username') ФИО
+                    input#username.-inputtext-(name='username' type='text' required)
+                .form__field
+                    select.-select-
+                        option Год рождения
+                        option 1988
+                        option 1989
+                        option 1991
+                        option 1991
+                        option 1992
+                        option 1993
+                        option 1994
+                        option 1995
+                        option 1996
+                        option 1997
+                .form__field
+                    label(for='city') Место проживания
+                    input#city.-inputtext-(name='city' type='text')
+                .form__field
+                    label(for='skype') Skype
+                    input#skype.-inputtext-(name='skype' type='text')
+                .form__field
+                    label(for='email') E-mail
+                    input#email.-inputtext-(name='city' type='email' required)

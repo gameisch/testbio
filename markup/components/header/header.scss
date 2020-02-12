@@ -1,0 +1,73 @@
+.header{
+    position: relative;
+    width:100%;
+    height:80px;
+    &__inner{
+        @include wrapper;
+        height:100%;
+        @include max-screen($grid-ls) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__content {
+        flex-grow: 1;
+        transition: margin-top .2s;
+        &-close {
+            @include min-screen($grid-ls) {
+                display: none;
+            }
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            color: $blue;
+        }
+        @include max-screen($grid-ls) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 101;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            overflow: auto;
+            opacity: 0;
+            visibility: hidden;
+            transform:translateX(-30px);
+            transition: all .3s;
+        }
+        &--show {
+            visibility: visible;
+            transform:translateX(0);
+            opacity: 1;
+        }
+    }
+    &__menu{
+        width:calc(100% - 175px);
+        height:100%;
+        margin:0 auto;
+        display:flex;
+        box-sizing:border-box;
+        flex-wrap:nowrap;
+        align-items:center;
+        justify-content:space-around;
+        @include max-screen($grid-ls) {
+            flex-direction: column;
+        }
+    }
+    &__trigger {
+        @include min-screen($grid-ls) {
+            display: none;
+        }
+        color: $blue;
+        font-size: 36px;
+        margin-left: 20px;
+    }
+}

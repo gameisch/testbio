@@ -1,0 +1,9 @@
+mixin blockabout()
+    .section#about
+        +heading('Расскажите о себе', 'icon4.png')
+        .section__inner
+            .form
+                .form__field
+                    textarea(placeholder='Понравилас тем, что...')
+                .form__field
+                    input#submit.btn(type='submit' value='Готово')

@@ -1,0 +1,7 @@
+mixin heading(data, bg)
+    .heading
+        .heading__icon(style= bg ? 'background-image:url(%=static=%img/content/' + bg + ')' : '')
+        .heading__title
+            h2.h2 #{data}
+        if data === 'Расскажите о себе'
+            .heading__text Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас
